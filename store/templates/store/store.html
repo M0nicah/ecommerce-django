@@ -1,8 +1,63 @@
-
+{% extends 'store/main.html' %}
+{% load static %}
 {% load tailwind_tags %}
 {% tailwind_css %}
 <body>
-    <h2 class="text-green-500">store works!</h2>
+    {% block content%}
+      <main class="flex items-center justify-center space-x-5 ">
+        <div class="justify-center mx-auto items-center flex  gap-4 p-2">
+          <div class="flex flex-wrap justify-center mx-auto items-center  ">
+            <div class="bg-gray-100 w-96 p-1 mt-5">
+              <img src="https://images.unsplash.com/photo-1563391507496-209fc783d42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJhZ3N8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="rounded-xl w-full" alt="...">
+              <div>
+                <h2>Product 1</h2>
+                <p>description</p>
+                <h3>Price in USD</h3>
+                <button class="bg-green-900 text-white text-center p-2 w-48 rounded">Add to Cart <span class="rounded-full bg-red-500 h-2 w-2"></span></button>
+              </div>
+            </div>
+            <div class=" bg-gray-100 w-96 p-1 mx-5 mt-5">
+              <img src="https://images.unsplash.com/photo-1516765865430-ac8d320b9208?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJhZ3N8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="" class="rounded w-full ">
+              <div>
+                <h2>Product 2</h2>
+                <p>description</p>
+                <h3>Price in USD</h3>
+                <button class="bg-green-900 text-white text-center p-2 w-48 rounded">Add to Cart <span class="w-1 h-1 rounded-full bg-green-500 p-0"></span></button>
+              </div>
+            </div>
+            <div class=" bg-gray-100 w-96 p-1 mx-2 mt-5">
+              <img src="https://images.unsplash.com/photo-1615485925706-8f0289e9f11c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJhZ3N8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" class="rounded w-full ">
+
+              <div>
+                <h2>Product 3</h2>
+                <p>description</p>
+                <h3>Price in USD</h3>
+                <button class="bg-green-900 text-white text-center p-2 w-48 rounded">Add to Cart <span class="w-1 h-1 rounded-full bg-green-500"></span></button>
+              </div>
+
+            </div>
+            <div class=" bg-gray-100 w-96 p-1 mx-5 mt-5">
+              <img src="https://images.unsplash.com/photo-1569385210018-127685230669?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmFnc3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=700&q=60" alt="" class="w-full h-96 rounded">
+              <div>
+                <h2>Product 4</h2>
+                <p>description</p>
+                <h3>Price in USD</h3>
+                <button class="bg-green-900 text-white text-center p-2 w-48 rounded">Add to Cart <span class="w-1 h-1 rounded-full bg-green-500"></span></button>
+              </div>
+
+
+            </div>
+
+          </div>
+            
+        </div>
+
+      </main>
+      
+    {% endblock%}
+    
+    
+    
 </body>
 
 
