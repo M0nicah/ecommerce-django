@@ -4,72 +4,164 @@
 {% tailwind_css %}
 <body>
     {% block content%}
-      <main class="flex items-center justify-center space-x-5 ">
-        <div class="justify-center mx-auto items-center flex  gap-4 p-2">
-          <div class="flex flex-wrap justify-center mx-auto items-center  ">
-            <div class="bg-gray-100 w-96 mt-5">
-              <img src="https://images.unsplash.com/photo-1563391507496-209fc783d42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJhZ3N8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="rounded w-full" alt="...">
-              <div class="mx-2">
-                <h2>Product 1</h2>
-                <p>description</p>
-                <h3>Price in USD</h3>
-                <div class="flex gap-4">
-                  <button class="bg-white text-green-700 border border-green-900 rounded p-2 w-24">View</button>
-                  <button class="bg-green-900 text-white text-center p-2 w-48 rounded">Add to Cart</button>
-                  
+    <aside class="bg-gray-100 p-2 w-full">
+      <div class="mx-auto container relative px-4 xl:px-0">
+        <div class="flex flex-col-reverse md:flex-row">
+            <div class="md:w-3/5 md:pt-24 pb-10 lg:py-32 xl:py-48">
+                <h1 class="text-3xl lg:text-6xl xl:text-8xl font-black text-gray-900  text-center md:text-left tracking-tighter f-f-i md:w-7/12 leading-tight text-heading-color">Simple<br>Everything</h1>
+                <h2 class="md:w-8/12 my-2 text-center md:text-left md:my-8 text-gray-700  text-lg lg:text-2xl">onlineCosmo shop. Your one stop shop for quality clothing and fragrance! </h2>
+                <div class="w-full flex justify-center md:block">
+                    <button class="hover:opacity-90 bg-green-900 py-3 px-10 lg:py-7 lg:px-20 rounded-full text-white text-sm md:text-lg f-f-p focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-700">SHOP NOW</button>
                 </div>
+            </div>
+            <div class="w-1/2 sm:w-2/5 h-64 md:h-auto m-auto flex items-center overflow-hidden">
                 
-              </div>
+                <img class="md:absolute md:w-1/2 md:-ml-28 mt-20" src="https://o.remove.bg/downloads/7290126c-013e-4637-a41a-f25a7bc993d3/photo-1591375275088-c37c83d2472d-removebg-preview.png" alt="Laptop with pivot page on screen" role="img" />
             </div>
-            <div class=" bg-gray-100 w-96 mx-5 mt-5">
-              <img src="https://images.unsplash.com/photo-1516765865430-ac8d320b9208?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJhZ3N8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="" class="rounded w-full ">
-              <div class="mx-2">
-                <h2>Product 2</h2>
-                <p>description</p>
-                <h3>Price in USD</h3>
-                <div class="flex gap-4">
-                  <button class="bg-white text-green-700 border border-green-900 rounded p-2 w-24">View</button>
-                  <button class="bg-green-900 text-white text-center p-2 w-48 rounded">Add to Cart</button>
-                  
-                </div>
-              </div>
-            </div>
-            <div class=" bg-gray-100 w-96 mx-2 mt-5">
-              <img src="https://images.unsplash.com/photo-1569988102006-d02305b3ec23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJhZ3N8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="" class="rounded w-full ">
-
-              <div class="mx-2">
-                <h2>Product 3</h2>
-                <p>description</p>
-                <h3>Price in USD</h3>
-                <div class="flex gap-4">
-                  <button class="bg-white text-green-700 border border-green-900 rounded p-2 w-24">View</button>
-                  <button class="bg-green-900 text-white text-center p-2 w-48 rounded">Add to Cart</button>
-                  
-                </div>
-                
-              </div>
-
-            </div>
-            <div class=" bg-gray-100 w-96 mx-5 mt-5">
-              <img src="https://images.unsplash.com/photo-1569385210018-127685230669?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmFnc3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=700&q=60" alt="" class="w-full h-96 rounded">
-              <div class="mx-2">
-                <h2>Product 4</h2>
-                <p>description</p>
-                <h3>Price in USD</h3>
-                <div class="flex gap-4">
-                  <button class="bg-white text-green-700 border border-green-900 rounded p-2 w-24">View</button>
-                  <button class="bg-green-900 text-white text-center p-2 w-48 rounded">Add to Cart</button>
-                  
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-            
         </div>
+      </div>
 
-      </main>
+    </aside>
+    
+    <section>
+    <div class="bg-white">
+      <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h2 class="">Products</h2>
+    
+        <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <a href="#" class="group bg-white shadow-md rounded-md">
+            <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <div class="p-1.5">
+              <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
+              <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
+              <p class="mt-1 py-1 text-gray-500 font-extralight text-sm italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            
+            <div class="flex gap-4 p-1.5">
+              <button class="bg-white text-green-700 border border-green-900 rounded p-2 w-24">View</button>
+              <button class="bg-green-900 text-white text-center p-2 w-48 rounded">Add to Cart</button>
+              
+            </div>
+          </a>
+    
+          <a href="#" class="group">
+            <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <div class="p-1.5">
+              <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
+              <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
+              <p class="mt-1 py-1 text-gray-500 font-extralight text-sm italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="flex gap-4">
+              <button class="bg-white text-green-700 border border-green-900 rounded p-2 w-24">View</button>
+              <button class="bg-green-900 text-white text-center p-2 w-48 rounded">Add to Cart</button>
+              
+            </div>
+
+          </a>
+    
+          <a href="#" class="group bg-white shadow-md rounded-md">
+            <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <div class="p-1.5">
+              <h3 class="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
+              <p class="mt-1 text-lg font-medium text-gray-900">$89</p>
+              <p class="mt-1 py-1 text-gray-500 font-extralight text-sm italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+            </div>
+            <div class="flex gap-4 p-1.5">
+              <button class="bg-white text-green-700 border border-green-900 rounded p-2 w-24">View</button>
+              <button class="bg-green-900 text-white text-center p-2 w-48 rounded">Add to Cart</button>
+              
+            </div>
+          </a>
+    
+          <a href="#" class="group">
+            <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <div class="p-1.5">
+              <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
+              <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
+              <p class="mt-1 py-1 text-gray-500 font-extralight text-sm italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="flex gap-4">
+              <button class="bg-white text-green-700 border border-green-900 rounded p-2 w-24">View</button>
+              <button class="bg-green-900 text-white text-center p-2 w-48 rounded">Add to Cart</button>
+              
+            </div>
+          </a>
+          <a href="#" class="group">
+            <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://images.unsplash.com/photo-1563391507496-209fc783d42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJhZ3N8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <div class="p-1.5">
+              <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
+              <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
+              <p class="mt-1 py-1 text-gray-500 font-extralight text-sm italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="flex gap-4">
+              <button class="bg-white text-green-700 border border-green-900 rounded p-2 w-24">View</button>
+              <button class="bg-green-900 text-white text-center p-2 w-48 rounded">Add to Cart</button>
+              
+            </div>
+          </a>
+          <a href="#" class="group">
+            <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://images.unsplash.com/photo-1569988102006-d02305b3ec23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJhZ3N8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <div class="p-1.5">
+              <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
+              <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
+              <p class="mt-1 py-1 text-gray-500 font-extralight text-sm italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="flex gap-4">
+              <button class="bg-white text-green-700 border border-green-900 rounded p-2 w-24">View</button>
+              <button class="bg-green-900 text-white text-center p-2 w-48 rounded">Add to Cart</button>
+              
+            </div>
+          </a>
+          <a href="#" class="group">
+            <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://media.istockphoto.com/id/1413883755/photo/many-different-cosmetic-products-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=Jj_H6vGLtRvU93MdA59UwH6kB7g9KYr18ar42L6CCUA=" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <div class="p-1.5">
+              <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
+              <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
+              <p class="mt-1 py-1 text-gray-500 font-extralight text-sm italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="flex gap-4">
+              <button class="bg-white text-green-700 border border-green-900 rounded p-2 w-24">View</button>
+              <button class="bg-green-900 text-white text-center p-2 w-48 rounded">Add to Cart</button>
+              
+            </div>
+          </a>
+          <a href="#" class="group">
+            <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <img src="https://images.unsplash.com/photo-1569385210018-127685230669?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmFnc3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=700&q=60" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <div class="p-1.5">
+              <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
+              <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
+              <p class="mt-1 py-1 text-gray-500 font-extralight text-sm italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="flex gap-4">
+              <button class="bg-white text-green-700 border border-green-900 rounded p-2 w-24">View</button>
+              <button class="bg-green-900 text-white text-center p-2 w-48 rounded">Add to Cart</button>
+              
+            </div>
+          </a>
+    
+          <!-- More products... -->
+        </div>
+      </div>
+    </div>
+
+    </section>
       
     {% endblock%}
     
