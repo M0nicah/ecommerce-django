@@ -3,6 +3,7 @@ from django.conf.urls.static import static
 from . import views
 from django.conf import settings
 
+
 urlpatterns = [
     # path('', views.main, name='main'),
     path('', views.store, name='store'),

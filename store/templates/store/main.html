@@ -13,7 +13,7 @@
 </head>
 <body style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
     
-    <nav x-data="{ isOpen: false }" class="fixed bg-white/80 backdrop-blur-md top-0 left-0 right-0 z-10 shadow w-full navbar-dark">
+    <nav class="fixed bg-white/80 backdrop-blur-md top-0 left-0 right-0 z-10 shadow w-full navbar-dark">
         <div class="lg:px-6 2xl:px-0">
             <div class="container mx-auto relative -z-20">
                 <nav class="max-w-6xl relative px-10   ">
@@ -44,7 +44,7 @@
                 </nav>
                 <nav class="lg:hidden ">
                     <div class="flex py-6 justify-between items-center px-4">
-                        <div class="w-2/3" aria-label="pivot. logo" role="img">
+                        <div class="w-2/3"  role="img">
                             <h2 class="text-green-900 font-sans font-bold text-3xl">onlineCosmo</h2>
                         </div>
 
@@ -56,17 +56,17 @@
                             </button>
                             <ul id="list" class="hidden p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-16 md:mt-16">
                                 <li class="flex cursor-pointer text-gray-900 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-black hover:bg-green-500 hover:p-2 focus:text-green-700 focus:outline-none">
-                                    <a href="javascript:void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-gray-600 ">
+                                    <a href="{% url 'store' %}" class="ml-2 focus:outline-none focus:ring-2 focus:ring-gray-600 ">
                                         <span class="font-bold">Home</span>
                                     </a>
                                 </li>
                                 <li class="flex cursor-pointer text-gray-900 text-sm leading-3 tracking-normal py-2 hover:text-black hover:bg-green-500 hover:p-2 focus:text-green-700 focus:outline-none" onclick="dropdownHandler(this)">
-                                    <a href="javascript:void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-gray-600">
+                                    <a href="{% url 'cart' %}" class="ml-2 focus:outline-none focus:ring-2 focus:ring-gray-600">
                                         <span class="font-bold">Cart</span>
                                     </a>
                                 </li>
                                 <li class="flex cursor-pointer text-gray-900  text-sm leading-3 tracking-normal py-2 hover:text-black hover:bg-green-500 hover:p-2 items-center focus:text-green-700 focus:outline-none">
-                                    <a href="javascript:void(0)" class="ml-2 focus:outline-none focus:ring-2 focus:ring-gray-600">
+                                    <a href="{% url 'checkout' %}" class="ml-2 focus:outline-none focus:ring-2 focus:ring-gray-600">
                                         <span class="font-bold">Checkout</span>
                                     </a>
                                 </li>
@@ -97,21 +97,19 @@
     {% endblock %}
     
     
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> 
     <script>
         const MenuHandler = (flag) => {
-    if (flag) {
-        document.getElementById("list").classList.add("top-100");
-        document.getElementById("list").classList.remove("hidden");
-        document.getElementById("close").classList.remove("hidden");
-        document.getElementById("open").classList.add("hidden");
-    } else {
-        document.getElementById("list").classList.remove("top-100");
-        document.getElementById("list").classList.add("hidden");
-        document.getElementById("close").classList.add("hidden");
-        document.getElementById("open").classList.remove("hidden");
-    }
+        if (flag) {
+            document.getElementById("list").classList.add("top-100");
+            document.getElementById("list").classList.remove("hidden");
+            document.getElementById("close").classList.remove("hidden");
+            document.getElementById("open").classList.add("hidden");
+        } else {
+            document.getElementById("list").classList.remove("top-100");
+            document.getElementById("list").classList.add("hidden");
+            document.getElementById("close").classList.add("hidden");
+            document.getElementById("open").classList.remove("hidden");
+        }
 };
 // slider js starts
 
